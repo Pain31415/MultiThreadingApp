@@ -1,0 +1,22 @@
+﻿<Window x:Class="MultiThreadingApp.MainForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainForm" Height="300" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Start Range:" Grid.Row="0"/>
+        <TextBox x:Name="startTextBox" Grid.Row="0" Margin="100,0,0,0"/>
+        <Label Content="End Range:" Grid.Row="1"/>
+        <TextBox x:Name="endTextBox" Grid.Row="1" Margin="100,0,0,0"/>
+        <Label Content="Thread Count:" Grid.Row="2"/>
+        <TextBox x:Name="threadTextBox" Grid.Row="2" Margin="100,0,0,0"/>
+        <Button Content="Start" Click="startButton_Click" Grid.Row="3" Margin="0,20,0,0"/>
+        <TextBox x:Name="resultTextBox" Grid.Row="4" Margin="0,20,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" IsReadOnly="True"/>
+    </Grid>
+</Window>
